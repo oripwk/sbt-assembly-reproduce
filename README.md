@@ -3,6 +3,9 @@
 This repository reproduces a sbt-assembly bug where a "Test" scope dependency causes the
 plugin to generate an entirely different JAR.
 
+## Edit
+Eventually the problem is not in sbt-assembly plugin. The problem is with [sbt itself](https://github.com/sbt/sbt-assembly/issues/436#issuecomment-862722100).
+
 ## Reproduce
 1. `sbt clean assembly`
 1. Copy the resulting JAR to a side folder
